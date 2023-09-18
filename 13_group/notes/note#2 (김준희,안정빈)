@@ -1,0 +1,53 @@
+#include<stdio.h>
+
+int main() {
+	int n = 3;
+	char c = '#';
+	double f = 3.14 * n * n;
+	int r = n + 5;
+
+	printf("%c5.5-%dhello1\n",c,n);
+	printf("n + 5 = %d\n",r);
+	printf("면적은 %.2f\n", f);
+}
+
+
+#include <stdio.h>
+
+int main() {
+
+	int width =0;
+	int height =0;
+	printf("너비를 입력하세요>>");
+	scanf_s("%d",&width);
+	printf("높이를 입력하세요>>");
+	scanf_s("%d",&height);
+	int area = width * height;
+	printf("면적은 %d", area);
+
+	return 0;
+}
+
+#include <iostream>;
+#include <cstring>;
+using namespace std;
+
+int main() {
+	char password[11];
+	cout << "암호를 입력하시오" << endl;
+	while (true) {
+		cout << "입력 ";
+		cin >> password;
+		if (strcmp(password, "password") == 0) {
+			cout << "잠금이 풀렸습니다." << endl;
+			break;
+		}
+		else
+			cout << "틀렸습니다." << endl;
+	}
+
+		return 0;
+}
+
+
+
